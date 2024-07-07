@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export const Hero = () => (
     <>
         <h1 className="font-bold text-5xl text-center p-32 pb-8">
@@ -5,10 +7,8 @@ export const Hero = () => (
             a versatile software developer with a focus on creating tangible impact.
         </h1>
         <div className="py-5 flex justify-center">
-            <Link href="/contact">
-                <a className="text-2xl bg-blue-600 text-white py-4 px-5 rounded hover:bg-blue-500 transition hover:duration-300 group">
+            <Link href="/contact" className="text-2xl bg-blue-600 text-white py-4 px-5 rounded hover:bg-blue-500 transition hover:duration-300 group">
                     Let's connect <span className="inline-block transition-transform transform group-hover:translate-x-1">-&gt;</span>
-                </a>
             </Link>
         </div>
     </>
