@@ -4,7 +4,7 @@ export default function Contact() {
     return (
         <>
             <h1 className="font-bold text-5xl text-center p-32 pb-8">
-                Let's get in touch!
+                Let&apos;s get in touch!
             </h1>
             <div className="flex flex-row justify-center space-x-4">
                 <a href="https://www.linkedin.com/in/samuel-thaiyil-444a75198/" target="_blank">

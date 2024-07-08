@@ -9,17 +9,16 @@ export const About = () => (
                 hobby into a dedicated career pursuit.
             </li>
             <li>
-                I graduated with a Honours Bachelor's Degree in Computer Science from Lakehead University and Diploma in Computer Programming from Georgian College.
+                I graduated with a Honours Bachelor&apos;s Degree in Computer Science from Lakehead University and Diploma in Computer Programming from Georgian College.
             </li>
             <li>
                 My expertise includes Java, C++, C#, JavaScript, TypeScript, Node.js, PHP, Swift, and Python.
             </li>
             <li>
-                My strong problem-solving, collaborative, and analytical skills are complemented by hands-on experience in software development
+                My strong problem-solving, collaborative, and analytical skills are complemented by hands-on experience in software development.
             </li>
             <li>
-                I am
-                enthusiastic about securing my first role as a Software Engineer, Frontend Developer, Backend Developer or Full
+                I am enthusiastic about securing my first role as a Software Engineer, Frontend Developer, Backend Developer or Full
                 Stack Developer in a dynamic and fast-growing company.
             </li>
         </ul>

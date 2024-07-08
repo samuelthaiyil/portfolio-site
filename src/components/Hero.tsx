@@ -3,7 +3,7 @@ import Link from "next/link";
 export const Hero = () => (
     <>
         <h1 className="font-bold text-5xl text-center p-32 pb-8">
-            Hi! I'm Sam,
+            Hi! I&apos;m Sam,
             a versatile software developer with a focus on creating tangible impact.
         </h1>
         <div className="py-5 flex justify-center space-x-3">
@@ -13,7 +13,7 @@ export const Hero = () => (
                 </svg>
             </a>
             <Link href="/contact" className="text-2xl bg-blue-600 text-white py-4 px-5 rounded hover:bg-blue-500 transition hover:duration-300 group">
-                    Let's connect <span className="inline-block transition-transform transform group-hover:translate-x-1">-&gt;</span>
+                    Let&apos;s connect <span className="inline-block transition-transform transform group-hover:translate-x-1">-&gt;</span>
             </Link>
         </div>
     </>
