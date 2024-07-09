@@ -1,4 +1,5 @@
 import Footer from "@/components/Footer";
+import {Nav} from "@/components/Nav";
 
 type Experience = { title: string; company: string; description: string[];  range: string; }
 
@@ -12,7 +13,6 @@ const experience: Experience[] = [
             "Developed and maintained 11 high-traffic websites built in React (Next.js), optimizing CPC advertising to drive consistent revenue growth.",
             "Engineered a web scraper in Javascript (Nest.js) that seamlessly extracted content from an AI writing service, decreasing content creation time by 40%.",
             "Collaborated in SCRUM development teams leveraging collective expertise to identify and resolve coding challenges swiftly."
-
         ],
         range: "May 2022 - Dec 2022"
     },
@@ -43,6 +43,7 @@ const experience: Experience[] = [
 export default function Experience() {
     return (
         <>
+            <Nav />
             <div className="px-8">
                 <h1 className="text-3xl lg:text-4xl font-bold text-center py-8 lg:py-12">Experience</h1>
                 {

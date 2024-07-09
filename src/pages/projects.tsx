@@ -1,3 +1,5 @@
+import {Nav} from "@/components/Nav";
+
 type Project = { name: string; stack: string; description: string; url: string; }
 
 const projects: Project[] = [
@@ -25,24 +27,29 @@ const projects: Project[] = [
 
 export default function Projects() {
     return (
-        <div className="px-8">
-            <h1 className="text-3xl lg:text-4xl font-bold text-center py-8 lg:py-12">Projects</h1>
-            {
-                projects.map(({ name, stack, description, url}) => {
-                    return (
-                        <li className="py-4 list-none" key={name}>
-                            <h3 className="text-xl font-bold pb-1">{name}</h3>
-                            <p className="text-slate-400 pb-2">{stack}</p>
-                            <p className="text-slate-600">{description}</p>
-                            <div className="py-5">
-                                <a href={url} target="_blank" className="bg-blue-600 text-white py-2 px-5 mt-8 rounded hover:bg-blue-500 transition hover:duration-300 group">
-                                    View Project <span className="inline-block transition-transform transform group-hover:translate-x-1">-&gt;</span>
-                                </a>
-                            </div>
-                        </li>
-                    )
-                })
-            }
-        </div>
+        <>
+            <Nav/>
+            <div className="px-8">
+                <h1 className="text-3xl lg:text-4xl font-bold text-center py-8 lg:py-12">Projects</h1>
+                {
+                    projects.map(({name, stack, description, url}) => {
+                        return (
+                            <li className="py-4 list-none" key={name}>
+                                <h3 className="text-xl font-bold pb-1">{name}</h3>
+                                <p className="text-slate-400 pb-2">{stack}</p>
+                                <p className="text-slate-600">{description}</p>
+                                <div className="py-5">
+                                    <a href={url} target="_blank"
+                                       className="bg-blue-600 text-white py-2 px-5 mt-8 rounded hover:bg-blue-500 transition hover:duration-300 group">
+                                        View Project <span
+                                        className="inline-block transition-transform transform group-hover:translate-x-1">-&gt;</span>
+                                    </a>
+                                </div>
+                            </li>
+                        )
+                    })
+                }
+            </div>
+        </>
     )
 }

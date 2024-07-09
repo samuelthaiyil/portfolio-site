@@ -1,8 +1,10 @@
 import Footer from "@/components/Footer";
+import {Nav} from "@/components/Nav";
 
 export default function Contact() {
     return (
         <>
+            <Nav />
             <h1 className="font-bold text-5xl text-center p-32 pb-8">
                 Let&apos;s get in touch!
             </h1>

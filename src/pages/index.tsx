@@ -1,12 +1,12 @@
 import {Hero} from "@/components/Hero";
 import Footer from "@/components/Footer";
-import {About} from "@/components/About";
+import {Nav} from "@/components/Nav";
 
 export default function Home() {
     return (
         <>
+            <Nav />
             <Hero />
-            <About />
             <Footer />
         </>
     )
