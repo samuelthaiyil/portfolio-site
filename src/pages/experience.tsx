@@ -51,7 +51,7 @@ export default function Experience() {
                         return (
                             <li className="py-4 list-none" key={title}>
                                 <h3 className="text-2xl font-bold pb-1">{title}</h3>
-                                <div className="flex justify-between">
+                                <div className="flex flex-col lg:flex-row lg:justify-between">
                                     <h3 className="text-xl text-slate-500 font-bold pb-1">{company}</h3>
                                     <h3 className="text-lg text-slate-500 pb-1">{range}</h3>
                                 </div>

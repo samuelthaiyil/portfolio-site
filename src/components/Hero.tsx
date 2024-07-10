@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const Hero = () => (
     <>
-        <h1 className="font-bold text-5xl text-center p-32 pb-8 leading-tight">
+        <h1 className="font-bold text-5xl text-center leading-tight p-12">
             Hi! I&apos;m Sam,
             a versatile software developer with a focus on creating tangible impact.
         </h1>
