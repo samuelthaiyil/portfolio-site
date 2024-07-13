@@ -5,7 +5,7 @@ export default function Contact() {
     return (
         <>
             <Nav />
-            <h1 className="font-bold text-5xl text-center p-32 pb-8">
+            <h1 className="font-bold text-4xl lg:text-5xl text-center p-32 pb-8">
                 Let&apos;s get in touch!
             </h1>
             <div className="flex flex-row justify-center space-x-4">
