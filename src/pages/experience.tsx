@@ -11,7 +11,7 @@ const experience: Experience[] = [
             "Optimally designed and implemented CPC widgets which generating roughly $50k in revenue over a\n" +
             "2-month period.",
             "Developed and maintained 11 high-traffic websites built in React (Next.js), optimizing CPC advertising to drive consistent revenue growth.",
-            "Engineered a web scraper in Javascript (Nest.js) that seamlessly extracted content from an AI writing service, decreasing content creation time by 40%.",
+            "Engineered a web scraper in JavaScript (Nest.js) that seamlessly extracted content from an AI writing service, decreasing content creation time by 40%.",
             "Collaborated in SCRUM development teams leveraging collective expertise to identify and resolve coding challenges swiftly."
         ],
         range: "May 2022 - Dec 2022"
