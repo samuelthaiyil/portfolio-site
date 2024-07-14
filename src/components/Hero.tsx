@@ -13,7 +13,7 @@ export const Hero = () => (
             </motion.h1>
             <motion.h1
                 animate={{y: -30, opacity: 100}}
-                transition={{ease: "easeOut", duration: 1, delay: 1}}
+                transition={{ease: "easeOut", duration: 0.5, delay: 1}}
                 className="font-bold text-5xl text-center leading-tight pr-12 pl-12 pb-12 opacity-0"
             >
                 a versatile software developer with a focus on creating tangible impact.
