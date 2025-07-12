@@ -17,6 +17,15 @@ const skills: Skill[] = [
 
 export const Skills = () => (
     <>
-
+        {
+            skills.map(({ name, description }) => {
+                return (
+                    <li className="list-none my-4" key={name}>
+                        <p className="font-bold dark:text-white">{name}</p>
+                        <p className="text-gray-700 dark:text-gray-300">{description}</p>
+                    </li>
+                )
+            })
+        }
     </>
 )
