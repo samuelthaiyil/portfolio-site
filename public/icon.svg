@@ -1,0 +1,10 @@
+<svg width="192" height="192" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background circle -->
+  <circle cx="96" cy="96" r="90" fill="#3b82f6" stroke="#1d4ed8" stroke-width="6"/>
+  
+  <!-- Letter S -->
+  <path d="M60 72C60 65.3726 65.3726 60 72 60H84C90.6274 60 96 65.3726 96 72C96 78.6274 90.6274 84 84 84H72C65.3726 84 60 89.3726 60 96C60 102.627 65.3726 108 72 108H84C90.6274 108 96 102.627 96 96" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  
+  <!-- Letter T -->
+  <path d="M108 60H156M132 60V132" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg> 

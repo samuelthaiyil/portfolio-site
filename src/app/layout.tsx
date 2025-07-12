@@ -12,6 +12,14 @@ const instrumentSans = Instrument_Sans({
 export const metadata: Metadata = {
   title: "Sam Thaiyil",
   description: "Sam Thaiyil's personal website",
+  icons: {
+    icon: [
+      { url: '/favicon.svg', type: 'image/svg+xml' },
+      { url: '/icon.svg', sizes: '192x192', type: 'image/svg+xml' },
+    ],
+    shortcut: '/favicon.svg',
+    apple: '/icon.svg',
+  },
 };
 
 export default function RootLayout({
