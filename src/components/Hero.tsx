@@ -23,7 +23,7 @@ export const Hero = () => (
             <motion.h1
                 animate={{y: -30, opacity: 100}}
                 transition={{ease: "easeOut", duration: 1, delay: 1.8}}
-                className="font-bold text-5xl text-center leading-tight pr-12 pl-3 pb-3 opacity-0 dark:text-white"
+                className="font-bold text-5xl text-center leading-tight px-12 pb-3 opacity-0 dark:text-white max-w-4xl mx-auto"
             >
                 a full stack engineer who ships products that reshape how businesses operate
             </motion.h1>
