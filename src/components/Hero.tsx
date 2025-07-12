@@ -25,7 +25,7 @@ export const Hero = () => (
                 transition={{ease: "easeOut", duration: 1, delay: 1.8}}
                 className="font-bold text-5xl text-center leading-tight pr-12 pl-3 pb-3 opacity-0 dark:text-white"
             >
-                a versatile software developer with a focus on creating tangible impact.
+                a full stack engineer who ships products that reshape how businesses operate
             </motion.h1>
         </div>
         <div className="py-4 flex justify-center space-x-3">
