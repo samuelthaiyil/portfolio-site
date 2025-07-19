@@ -28,15 +28,13 @@ export const ThemeToggle = () => {
     html.classList.add(newTheme);
     
     html.setAttribute('data-theme', newTheme);
-    
-    console.log(`Theme applied: ${newTheme}`, html.classList.toString());
   };
 
   const toggleTheme = () => {
     const newTheme = theme === 'light' ? 'dark' : 'light';
     
-    console.log(`Toggling from ${theme} to ${newTheme}`);
-    
+
+
     setTheme(newTheme);
     
     localStorage.setItem('theme', newTheme);
