@@ -1,7 +1,15 @@
+"use client";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useEffect } from "react";
+import { usePostHog } from "posthog-js/react";
 
-export const Hero = () => (
+export const Hero = () => {
+    let posthog = usePostHog();
+    useEffect(() => {
+        console.log(posthog);
+    }, [posthog]);
+    return (
     <>
         <div className="py-2">
             <h1 className="font-bold text-5xl text-center leading-tight pt-12 pb-10 dark:text-white">
@@ -39,4 +47,5 @@ export const Hero = () => (
             </Link>
         </div>
     </>
-)
+    )
+}
