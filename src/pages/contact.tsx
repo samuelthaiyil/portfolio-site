@@ -6,7 +6,7 @@ export default function Contact() {
         <>
             <Nav />
             <h1 className="font-bold text-4xl lg:text-5xl text-center p-32 pb-8">
-                Let&apos;s get in touch!
+                Let&apos;s connect
             </h1>
             <div className="flex flex-row justify-center space-x-4 pb-8">
                 <a href="https://www.linkedin.com/in/samuel-thaiyil-444a75198/" target="_blank">
