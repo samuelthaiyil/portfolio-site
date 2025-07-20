@@ -8,7 +8,7 @@ export default function Home() {
         <>
             <Head>
                 <title>Sam Thaiyil</title>
-                <meta name="description" content="Sam Thaiyil's personal website" />
+                <meta name="description" content="Sam Thaiyil&apos;s personal website" />
             </Head>
             <Nav />
             <Hero />
