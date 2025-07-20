@@ -20,11 +20,11 @@ export const Nav = () => {
                             ? "dark:text-white tracking-wider" 
                             : "text-slate-400 hover:text-slate-500 dark:text-slate-300 dark:hover:text-slate-200"
                     }`} href="/about">About</Link>
-                    <Link className={`text-xl font-bold transition-all duration-500 ease-out hover:tracking-wider ${
+                    {/* <Link className={`text-xl font-bold transition-all duration-500 ease-out hover:tracking-wider ${
                         router.pathname === "/contact" 
                             ? "dark:text-white tracking-wider" 
                             : "text-slate-400 hover:text-slate-500 dark:text-slate-300 dark:hover:text-slate-200"
-                    }`} href="/contact">Contact</Link>
+                    }`} href="/contact">Contact</Link> */}
                  </div>
                 <ThemeToggle />
             </div>
