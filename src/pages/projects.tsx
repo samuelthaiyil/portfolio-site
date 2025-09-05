@@ -12,7 +12,7 @@ const projects: Project[] = [
     },
     {
         name: "Redactify",
-        stack: "React, Next.js, Tesseract.js",
+        stack: "React, Next.js, TypeScript, Tesseract.js",
         description: "A web application that leverages OCR to redact sensitive information from PDFs",
         url: "https://redactify-kappa.vercel.app/",
         viewMethod: "Try Project"
