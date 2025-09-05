@@ -5,7 +5,7 @@ import { ThemeToggle } from "./ThemeToggle";
 export const Nav = () => {
     const router = useRouter();
     return (
-       <div className="relative top-0 w-full">
+       <div className="relative top-0 w-full shadow-sm dark:shadow-gray-800">
             <div className="p-8 flex justify-between items-center">
                 <div className="space-x-4">
                     <Link className={`text-xl font-bold transition-all duration-500 ease-out hover:tracking-wider ${

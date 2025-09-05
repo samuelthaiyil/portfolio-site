@@ -30,7 +30,7 @@ export default function Projects() {
                             <li className="py-4 list-none" key={name}>
                                 <h3 className="text-xl font-bold pb-1">{name}</h3>
                                 <p className="text-slate-400 pb-2">{stack}</p>
-                                <p className="text-slate-200">{description}</p>
+                                <p className="text-black dark:text-slate-200">{description}</p>
                                 <div className="py-5">
                                     <a href={url} target="_blank"
                                        className="bg-blue-600 text-white py-2 px-5 mt-8 rounded hover:bg-blue-500 transition hover:duration-300 group">

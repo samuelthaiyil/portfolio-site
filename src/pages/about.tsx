@@ -2,6 +2,7 @@ import { Description } from "@/components/Description";
 import { Nav } from "@/components/Nav";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function About() {
     return (
@@ -13,7 +14,7 @@ export default function About() {
                         display: none;
                     }
                 `}</style>
-                <div className="container mx-auto px-4 py-16 overflow-hidden">
+                <div className="container mx-auto px-4 py-8 overflow-hidden">
                     <div className="max-w-6xl mx-auto">
                         <div className="grid md:grid-cols-2 gap-12 items-center">
                             {/* Headshot Section */}
@@ -57,6 +58,16 @@ export default function About() {
                                     </p>
                                     <p>
                                         I first developed a passion for building at age 12, teaching myself C++ and Direct3D to create a 3D game engine. This early spark led me to earn my BSc in Computer Science from Lakehead University, and I&apos;m currently completing my MSc in Computer Information Systems with a concentration in Data Analytics at Boston University to stay at the forefront of emerging technologies.
+                                    </p>
+                                    <p>
+                                        Check out my{" "}
+                                        <Link 
+                                            href="/projects" 
+                                            className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline transition-colors duration-200"
+                                        >
+                                            projects
+                                        </Link>
+                                        {" "}to explore my latest builds.
                                     </p>
                                 </div>
                             </div>
