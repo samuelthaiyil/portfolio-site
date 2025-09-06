@@ -60,6 +60,9 @@ export default function About() {
                                         I first developed a passion for building at age 12, teaching myself C++ and Direct3D to create a 3D game engine. This early spark led me to earn my BSc in Computer Science from Lakehead University, and I&apos;m currently completing my MSc in Computer Information Systems with a concentration in Data Analytics at Boston University to stay at the forefront of emerging technologies.
                                     </p>
                                     <p>
+                                        When I&apos;m not building I love working out, reading Ryan Holiday books and listening to music. 
+                                    </p>
+                                    <p>
                                         Check out my{" "}
                                         <Link 
                                             href="/projects" 
