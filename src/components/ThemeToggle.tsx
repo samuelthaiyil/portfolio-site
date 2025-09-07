@@ -1,64 +1,9 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useTheme } from './ThemeProvider';
 
 export const ThemeToggle = () => {
-  const [theme, setTheme] = useState<'light' | 'dark'>('light');
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-    
-    const savedTheme = localStorage.getItem('theme') as 'light' | 'dark';
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const initialTheme = savedTheme || (prefersDark ? 'dark' : 'light');
-    
-    setTheme(initialTheme);
-    
-    applyTheme(initialTheme);
-  }, []);
-
-  const applyTheme = (newTheme: 'light' | 'dark') => {
-    const html = document.documentElement;
-    
-    html.classList.remove('dark', 'light');
-    
-    html.offsetHeight;
-    
-    html.classList.add(newTheme);
-    
-    html.setAttribute('data-theme', newTheme);
-  };
-
-  const toggleTheme = () => {
-    const newTheme = theme === 'light' ? 'dark' : 'light';
-    
-
-
-    setTheme(newTheme);
-    
-    localStorage.setItem('theme', newTheme);
-    
-    applyTheme(newTheme);
-  };
-
-  if (!mounted) {
-    return (
-      <button
-        className="p-2 rounded-lg bg-gray-200 hover:bg-gray-300 transition-colors duration-200"
-        aria-label="Toggle theme"
-      >
-        <svg
-          className="w-5 h-5 text-gray-700"
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z" />
-        </svg>
-      </button>
-    );
-  }
+  const { theme, toggleTheme } = useTheme();
 
   return (
     <button

@@ -15,12 +15,20 @@ export default function Document() {
                 try {
                   var theme = localStorage.getItem('theme');
                   var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                  if (theme === 'dark' || (!theme && prefersDark)) {
+                  var shouldBeDark = theme === 'dark' || (!theme && prefersDark);
+                  
+                  if (shouldBeDark) {
                     document.documentElement.classList.add('dark');
+                    document.documentElement.style.colorScheme = 'dark';
                   } else {
                     document.documentElement.classList.remove('dark');
+                    document.documentElement.style.colorScheme = 'light';
                   }
-                } catch (e) {}
+                } catch (e) {
+                  // Fallback to light theme if there's any error
+                  document.documentElement.classList.remove('dark');
+                  document.documentElement.style.colorScheme = 'light';
+                }
               })();
             `,
           }}
