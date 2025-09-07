@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 
 export const Hero = () => (
-    <div className="flex flex-col md:flex-row">
+    <div className="flex flex-col">
         <div className="py-2">
             <h1 className="font-bold text-4xl md:text-5xl text-center leading-tight pt-12 pb-10 dark:text-white">
                 <motion.span
@@ -23,7 +23,7 @@ export const Hero = () => (
             <motion.h1
                 animate={{ y: -30, opacity: 100 }}
                 transition={{ ease: "easeOut", duration: 1, delay: 1.8 }}
-                className="font-bold text-4xl md:text-5xl text-center leading-tight px-12 pb-3 opacity-0 dark:text-white max-w-4xl mx-auto"
+                className="font-bold text-4xl md:text-5xl text-center px-12 pb-3 opacity-0 dark:text-white max-w-4xl mx-auto"
             >
                 a full stack engineer who ships products that reshape how businesses operate
             </motion.h1>
@@ -38,7 +38,7 @@ export const Hero = () => (
                 }}
                 className="h-1/4 items-center text-2xl bg-blue-600 dark:bg-blue-500 text-white py-4 px-5 rounded hover:bg-blue-500 dark:hover:bg-blue-400 transition hover:duration-300 group"
             >
-                More about me <span className="inline-block transition-transform transform group-hover:translate-x-1">-&gt;</span>
+                More About Me <span className="inline-block transition-transform transform group-hover:translate-y-1 ml-2">↓</span>
             </button>
         </div>
     </div>
