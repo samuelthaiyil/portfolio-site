@@ -32,12 +32,6 @@ export default function Home() {
                 <meta name="description" content="Sam Thaiyil&apos;s personal website" />
             </Head>
             <Nav />
-            
-            {/* Hero Section */}
-            <section id="home" className="min-h-screen flex items-center justify-center pt-20">
-                <Hero />
-            </section>
-            
             {/* About Section */}
             <section id="about" className="min-h-screen bg-white dark:bg-black overflow-hidden pt-20" style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
                 <style jsx>{`
@@ -80,18 +74,15 @@ export default function Home() {
                             
                             {/* Description Section */}
                             <div className="text-gray-700 dark:text-gray-300 text-xl leading-relaxed">
-                                <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-8">
-                                I build intelligent systems that solve complex problems.
-                                </h1>
                                 <div className="space-y-6">
                                     <p>
-                                        I&apos;m a Full Stack Engineer at PledgX, a fintech startup. I use React, Typescript and Python Flask to architect and deploy AI workflows that drive operational efficiency in financial systems.
+                                        Hey! I&apos;m <strong>Sam</strong>. I&apos;m from Toronto and I&apos;m a Full Stack Engineer at PledgX, a fintech startup, where I recently used React, Typescript and Flask to lead the development an AI financial document data extractor that reduces manual data entry by 30&#37;.
                                     </p>
                                     <p>
-                                        I first developed a passion for building at age 12, teaching myself C++ and Direct3D to create a 3D game engine. This early spark led me to earn my BSc in Computer Science from Lakehead University, and I&apos;m currently completing my MSc in Computer Information Systems with a concentration in Data Analytics at Boston University to stay at the forefront of emerging technologies.
+                                        I first developed a passion for building at age 12, teaching myself C++ and Direct3D to create a 3D game engine. This early spark led me to earn my BSc in Computer Science from Lakehead University, and I&apos;m currently completing my MSc in Computer Information Systems with a concentration in Data Analytics at Boston University to stay at the forefront of emerging tech.
                                     </p>
                                     <p>
-                                        When I&apos;m not building I love working out, reading Ryan Holiday books and listening to music. 
+                                        When I&apos;m not building I love the gym, reading into stoic philsophy and playing chess. 
                                     </p>
                                     <p>
                                         Check out my{" "}
@@ -106,7 +97,7 @@ export default function Home() {
                                         >
                                             projects
                                         </button>
-                                        {" "}to explore my latest builds.
+                                        {" "}to explore some cool things I&apos;ve built
                                     </p>
                                 </div>
                             </div>
