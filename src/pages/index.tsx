@@ -100,7 +100,8 @@ export default function Home() {
                     You can read more about me{" "}
                     <button
                       onClick={() => {
-                        const element = document.getElementById("more-about-me");
+                        const element =
+                          document.getElementById("more-about-me");
                         if (element) {
                           element.scrollIntoView({ behavior: "smooth" });
                         }
@@ -129,7 +130,9 @@ export default function Home() {
             <div className="max-w-3xl mx-auto text-left">
               <ul className="list-none space-y-6 text-lg text-black dark:text-white leading-relaxed">
                 <li className="flex items-start space-x-3">
-                  <span className="text-blue-600 dark:text-blue-400 mt-1">•</span>
+                  <span className="text-blue-600 dark:text-blue-400 mt-1">
+                    •
+                  </span>
                   <span>
                     I have a BSc in CS and I&apos;m currently working an MSc in
                     Computer Information Systems at Boston University with a
@@ -137,51 +140,54 @@ export default function Home() {
                   </span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <span className="text-blue-600 dark:text-blue-400 mt-1">•</span>
+                  <span className="text-blue-600 dark:text-blue-400 mt-1">
+                    •
+                  </span>
                   <span>
-                    First developed a passion for building at 12 when I taught myself C++ and Direct3D and built a 3D game engine
+                    First developed a passion for building at 12 when I taught
+                    myself C++ and Direct3D and built a 3D game engine, from
+                    there I immersed myself in object oriented programming.
                   </span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <span className="text-blue-600 dark:text-blue-400 mt-1">•</span>
+                  <span className="text-blue-600 dark:text-blue-400 mt-1">
+                    •
+                  </span>
                   <span>
                     At my current role I lead the development of an AI-powered
-                    workflow that extracts and corrects data from financial statements
-                    to be later used in financial analytics
+                    workflow that orchestrtaes several models to extract and validate data from financial
+                    statements to be used in analytics
                   </span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <span className="text-blue-600 dark:text-blue-400 mt-1">•</span>
+                  <span className="text-blue-600 dark:text-blue-400 mt-1">
+                    •
+                  </span>
                   <span>
-                    Built a calendar system for patient scheduling at a stealth
-                    healthcare startup
+                    Worked at a EMR SaaS startup where I built a calendar system
+                    for patient appointments, validation systems for healthcard
+                    (government ID) and a PDF field mapper that allowed mapped
+                    PDfs to be filled out later using text input
                   </span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <span className="text-blue-600 dark:text-blue-400 mt-1">•</span>
+                  <span className="text-blue-600 dark:text-blue-400 mt-1">
+                    •
+                  </span>
                   <span>
-                    Developed validation systems that ensured validity of healthcard
-                    (government ID)
+                    Worked at a marketing agency where I built and maintained
+                    11+ high-traffic advertising sites built in and React
+                    Next.js, and built an web scraping bot that would scrape
+                    data from an LLM and add it to our CRM
                   </span>
                 </li>
                 <li className="flex items-start space-x-3">
-                  <span className="text-blue-600 dark:text-blue-400 mt-1">•</span>
-                  <span>
-                    Created a PDF field mapper that allowed mapped PDfs to be filled
-                    out later using text input which streamlined clinician workflows
+                  <span className="text-blue-600 dark:text-blue-400 mt-1">
+                    •
                   </span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <span className="text-blue-600 dark:text-blue-400 mt-1">•</span>
                   <span>
-                    Built and maintained 11+ high-traffic advertising sites at an
-                    affiliate marketing company using React Next.js
-                  </span>
-                </li>
-                <li className="flex items-start space-x-3">
-                  <span className="text-blue-600 dark:text-blue-400 mt-1">•</span>
-                  <span>
-                   Currently working on a Clay-esque enrichment platform side project 
+                    Currently working on a Clay-esque enrichment platform
+                    project
                   </span>
                 </li>
               </ul>
@@ -247,6 +253,68 @@ export default function Home() {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="reading-list"
+        className="min-h-screen bg-white dark:bg-black py-16 pt-32 flex items-center"
+      >
+        <div className="container mx-auto px-8">
+          <div className="max-w-4xl mx-auto text-center">
+            <h2 className="text-4xl font-bold text-center mb-16 text-gray-900 dark:text-white">
+              What I&apos;m Reading
+            </h2>
+            <div className="max-w-3xl mx-auto text-left">
+              <ul className="list-none space-y-6 text-lg text-black dark:text-white leading-relaxed">
+                 <li className="flex items-start space-x-3">
+                   <span className="text-blue-600 dark:text-blue-400 mt-1">
+                     •
+                   </span>
+                   <span>
+                     <a 
+                       href="https://www.sahilbloom.com/newsletter/the-4-types-of-luck"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline transition-colors duration-200"
+                     >
+                       The 4 Types of Luck - Sahil Bloom
+                     </a>
+                   </span>
+                 </li>
+                 <li className="flex items-start space-x-3">
+                   <span className="text-blue-600 dark:text-blue-400 mt-1">
+                     •
+                   </span>
+                   <span>
+                     <a 
+                       href="https://www.paulgraham.com/schlep.html"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline transition-colors duration-200"
+                     >
+                       Schlep Blindness - Paul Graham
+                     </a>
+                   </span>
+                 </li>
+                 <li className="flex items-start space-x-3">
+                   <span className="text-blue-600 dark:text-blue-400 mt-1">
+                     •
+                   </span>
+                   <span>
+                     <a 
+                       href="https://jamesclear.com/shadow-side"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       className="text-blue-600 hover:text-blue-800 dark:text-blue-400 dark:hover:text-blue-300 underline transition-colors duration-200"
+                     >
+                       The Shadow Side of Greatness - James Clear
+                     </a>
+                   </span>
+                 </li>
+              </ul>
+            </div>
           </div>
         </div>
       </section>
