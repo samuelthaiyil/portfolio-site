@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,200..800;1,200..800&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body, html {
-  font-family: "Instrument Sans", sans-serif;
+  font-family: "Newsreader", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
@@ -20,7 +20,12 @@ body, html {
 
 /* Dark mode body background */
 body {
-  @apply bg-white dark:bg-black text-gray-900 dark:text-white;
+  @apply bg-white dark:bg-black text-white;
+  background-image: url('/website-graphic.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 /* Force repaint on theme change */
@@ -28,10 +33,20 @@ body {
   transition: all 0.3s ease-in-out;
 }
 
-/* Hide scrollbars globally */
+/* Hide scrollbars globally but allow content scrolling */
 html, body {
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* Internet Explorer 10+ */
+  scroll-behavior: auto; /* Disable default smooth scrolling */
+  overflow: hidden; /* Prevent page-level scrolling on desktop */
+  height: 100vh; /* Fixed viewport height */
+}
+
+/* Allow scrolling on mobile devices */
+@media (max-width: 767px) {
+  html, body {
+    overflow: auto; /* Allow scrolling on mobile */
+  }
 }
 
 html::-webkit-scrollbar, body::-webkit-scrollbar {
@@ -45,5 +60,37 @@ html::-webkit-scrollbar, body::-webkit-scrollbar {
 }
 
 *::-webkit-scrollbar {
+  display: none; /* Safari and Chrome */
+}
+
+/* Navbar backdrop blur support */
+.navbar-blur {
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+/* Prevent automatic scrolling between sections */
+html {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+section {
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+/* Override smooth scrolling for manual navigation only */
+.smooth-scroll {
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar while allowing scrolling */
+.scrollbar-hide {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
   display: none; /* Safari and Chrome */
 }

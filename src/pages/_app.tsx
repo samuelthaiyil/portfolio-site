@@ -3,13 +3,13 @@ import '../app/globals.css';
 import type { AppProps } from 'next/app';
 import { Analytics } from '@vercel/analytics/react';
 import { ThemeProvider } from "@/components/ThemeProvider";
-import { Instrument_Sans } from "next/font/google";
+import { Newsreader } from "next/font/google";
 import { useEffect } from 'react';
 import posthog from 'posthog-js';
 
-const instrumentSans = Instrument_Sans({ 
+const newsreader = Newsreader({ 
   subsets: ["latin"],
-  variable: "--font-instrument-sans"
+  variable: "--font-newsreader"
 });
 
 function MyApp({ Component, pageProps }: AppProps) {
@@ -28,7 +28,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         }
     }, []);
     return (
-        <div className={instrumentSans.className}>
+        <div className={newsreader.className}>
             <ThemeProvider>
                 <Component {...pageProps} />
                 <Analytics 
