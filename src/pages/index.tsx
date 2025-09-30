@@ -247,7 +247,6 @@ const ReadingSection = () => (
       <div className="max-w-3xl mx-auto text-left">
         <ul className="list-none space-y-4 md:space-y-6 text-base md:text-lg text-white leading-relaxed">
           <li className="flex items-start space-x-3">
-            <span className="text-white mt-1">•</span>
             <span>
               <a
                 href="https://www.sahilbloom.com/newsletter/the-4-types-of-luck"
@@ -260,7 +259,6 @@ const ReadingSection = () => (
             </span>
           </li>
           <li className="flex items-start space-x-3">
-            <span className="text-white mt-1">•</span>
             <span>
               <a
                 href="https://www.paulgraham.com/schlep.html"
@@ -273,7 +271,6 @@ const ReadingSection = () => (
             </span>
           </li>
           <li className="flex items-start space-x-3">
-            <span className="text-white mt-1">•</span>
             <span>
               <a
                 href="https://jamesclear.com/shadow-side"
@@ -295,6 +292,12 @@ export default function Home() {
   const [currentSection, setCurrentSection] = useState<SectionId>('about');
   const [navigationDirection, setNavigationDirection] = useState<'next' | 'prev'>('next');
   const isMobile = useIsMobile();
+  
+  // Debug logging
+  console.log('Home component rendered, isMobile:', isMobile);
+  
+  // Force mobile for testing - uncomment this line to see mobile layout
+  const forceMobile = true;
 
   const handleNavigation = (section: SectionId, direction: 'next' | 'prev') => {
     setNavigationDirection(direction);
@@ -317,7 +320,8 @@ export default function Home() {
   };
 
   // Mobile Layout - Multiple sections with scrolling
-  if (isMobile) {
+  if (isMobile || forceMobile) {
+    console.log('Rendering mobile layout');
     return (
       <>
         <Head>
@@ -328,17 +332,29 @@ export default function Home() {
         
         {/* Mobile: Multiple scrollable sections */}
         <div className="pt-20 overflow-y-auto h-screen scrollbar-hide">
-          <section className="min-h-[80vh] flex items-center py-8">
-            <AboutSection />
+          <section className="min-h-[80vh] py-8">
+            <h2 className="text-2xl font-bold text-white text-center mb-8">Intro</h2>
+            <div className="flex items-center min-h-[60vh]">
+              <AboutSection />
+            </div>
           </section>
-          <section className="min-h-[80vh] flex items-center py-8">
-            <MoreAboutSection />
+          <section className="min-h-[80vh] py-8">
+            <h2 className="text-2xl font-bold text-white text-center mb-8">About</h2>
+            <div className="flex items-center min-h-[60vh]">
+              <MoreAboutSection />
+            </div>
           </section>
-          <section className="min-h-[80vh] flex items-center py-8">
-            <ProjectsSection />
+          <section className="min-h-[80vh] py-8">
+            <h2 className="text-2xl font-bold text-white text-center mb-8">Projects</h2>
+            <div className="flex items-center min-h-[60vh]">
+              <ProjectsSection />
+            </div>
           </section>
-          <section className="min-h-[70vh] flex items-center py-8">
-            <ReadingSection />
+          <section className="min-h-[70vh] py-8">
+            <h2 className="text-2xl font-bold text-white text-center mb-8">Reading</h2>
+            <div className="flex items-center min-h-[50vh]">
+              <ReadingSection />
+            </div>
           </section>
         </div>
       </>
@@ -346,6 +362,7 @@ export default function Home() {
   }
 
   // Desktop Layout - Single section with navigation
+  console.log('Rendering desktop layout');
   return (
     <>
       <Head>
