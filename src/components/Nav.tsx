@@ -1,7 +1,7 @@
 export const Nav = () => {
 
     return (
-       <div className="fixed top-0 w-full shadow-sm dark:shadow-gray-800 bg-white/10 dark:bg-black/10 backdrop-blur-lg navbar-blur z-50">
+       <div className="fixed top-0 w-full bg-white/10 dark:bg-black/10 backdrop-blur-lg navbar-blur z-50">
             <div className="p-8 flex justify-center items-center">
                 <div className="flex items-center space-x-4">
                     <a 
