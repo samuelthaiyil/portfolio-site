@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
-import { useIsMobile } from "@/hooks/useIsMobile";
 
 type Project = {
   name: string;
@@ -20,19 +19,12 @@ type SectionId = "about" | "more-about-me" | "projects" | "reading-list";
 const NavigationButtons = ({
   currentSection,
   onNavigate,
-  isMobile,
 }: {
   currentSection: SectionId;
   onNavigate: (section: SectionId, direction: "next" | "prev") => void;
-  isMobile: boolean;
 }) => {
   const [isNextHovered, setIsNextHovered] = useState(false);
   const [isPrevHovered, setIsPrevHovered] = useState(false);
-
-  // Don't render navigation buttons on mobile
-  if (isMobile) {
-    return null;
-  }
 
   const sections: SectionId[] = [
     "about",
@@ -332,13 +324,6 @@ export default function Home() {
   const [navigationDirection, setNavigationDirection] = useState<
     "next" | "prev"
   >("next");
-  const isMobile = useIsMobile();
-
-  // Debug logging
-  console.log("Home component rendered, isMobile:", isMobile);
-
-  // Force mobile for testing - uncomment this line to see mobile layout
-  const forceMobile = true;
 
   const handleNavigation = (section: SectionId, direction: "next" | "prev") => {
     setNavigationDirection(direction);
@@ -360,58 +345,6 @@ export default function Home() {
     }
   };
 
-  // Mobile Layout - Multiple sections with scrolling
-  if (isMobile || forceMobile) {
-    console.log("Rendering mobile layout");
-    return (
-      <>
-        <Head>
-          <title>Sam Thaiyil</title>
-          <meta name="description" content="Sam Thaiyil's personal website" />
-        </Head>
-        <Nav />
-
-        {/* Mobile: Multiple scrollable sections */}
-        <div className="pt-20 overflow-y-auto h-screen scrollbar-hide">
-          <section className="min-h-[80vh] py-8">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
-              Intro
-            </h2>
-            <div className="flex items-center min-h-[60vh]">
-              <AboutSection />
-            </div>
-          </section>
-          <section className="min-h-[80vh] py-8">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
-              About
-            </h2>
-            <div className="flex items-center min-h-[60vh]">
-              <MoreAboutSection />
-            </div>
-          </section>
-          <section className="min-h-[80vh] py-8">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
-              Projects
-            </h2>
-            <div className="flex items-center min-h-[60vh]">
-              <ProjectsSection />
-            </div>
-          </section>
-          <section className="min-h-[70vh] py-8">
-            <h2 className="text-2xl font-bold text-white text-center mb-8">
-              Reading
-            </h2>
-            <div className="flex items-center min-h-[50vh]">
-              <ReadingSection />
-            </div>
-          </section>
-        </div>
-      </>
-    );
-  }
-
-  // Desktop Layout - Single section with navigation
-  console.log("Rendering desktop layout");
   return (
     <>
       <Head>
@@ -420,7 +353,7 @@ export default function Home() {
       </Head>
       <Nav />
 
-      {/* Desktop: Single Section with Dynamic Content */}
+      {/* Single Section with Dynamic Content */}
       <section className="min-h-screen h-screen pt-20 relative overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.div
@@ -444,7 +377,6 @@ export default function Home() {
         <NavigationButtons
           currentSection={currentSection}
           onNavigate={handleNavigation}
-          isMobile={isMobile}
         />
       </section>
     </>
