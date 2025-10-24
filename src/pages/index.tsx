@@ -373,6 +373,30 @@ const ReadingSection = () => (
               </a>
             </span>
           </li>
+          <li>
+            <span>
+              <a
+                href="https://www.amazon.ca/Statistics-Data-Analysis-Financial-Engineering/dp/1461427495"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-white underline transition-colors duration-200"
+              >
+                Statistics and Data Analysis for Financial Engineering - David Ruppert
+              </a>
+            </span>
+          </li>
+          <li>
+            <span>
+              <a
+                href="https://www.amazon.ca/Statistics-Data-Analysis-Financial-Engineering/dp/1461427495"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-white hover:text-white underline transition-colors duration-200"
+              >
+                The 7 Habits of Highly Effective People - Stephen Covey
+              </a>
+            </span>
+          </li>
         </ul>
       </div>
     </div>
