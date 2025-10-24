@@ -388,7 +388,7 @@ const ReadingSection = () => (
           <li>
             <span>
               <a
-                href="https://www.amazon.ca/Statistics-Data-Analysis-Financial-Engineering/dp/1461427495"
+                href="https://www.amazon.ca/Habits-Highly-Effective-People-Powerful/dp/1982137274/ref=sr_1_1?dib=eyJ2IjoiMSJ9.SqwOwJ5zN4dTSawslkpGL2BDnTZuLUQgAibEkgPPEdtq77jv-IkkqG7vb-8M6vi8I6lpZ74wU_dZwfupUCpxh7rxl5V_hCbXdgfnSyKIfW3H-nSE1BW2WVpgswDvQrX5Fz22dwaRsjb8ED5XL1lWR9TLa8fkbcQIvxf4xXiJMUc-Go1-5ytCz_wYoqkzmjS-7SV-EJx_Q7M6WRz7ztT_XJraz_c-oArJs4MES6d9uVeNjEy7cVwxduDkVWw8xGobxYTUEtqoODZzeC8rAiKuo9VnKbY8bTLetLB7UjH3bQc.V02E82XHVZCnXaQP5iSfADj_lvsSqpuhchN33yePs3w&dib_tag=se&gad_source=1&hvadid=588317931053&hvdev=c&hvexpln=0&hvlocphy=1002212&hvnetw=g&hvocijid=7844075255391504806--&hvqmt=e&hvrand=7844075255391504806&hvtargid=kwd-299278331910&hydadcr=15011_13531770&keywords=7+habits+of+highly+effective+people&mcid=68cecd2c35a937c7b8a577ac6f2760ec&qid=1761314011&sr=8-1"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white hover:text-white underline transition-colors duration-200"
