@@ -172,9 +172,8 @@ const AboutSection = () => (
               animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
               transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
             >
-              I&apos;m a Full Stack Engineer at a fintech startup based in
-              Toronto, where I&apos;m building AI pipelines that accelerate risk
-              assessment.
+              I&apos;m a Full Stack Software Engineer at a Autodesk, based in
+              Toronto, where I&apos;m building platform and AI.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20, filter: "blur(4px)" }}
@@ -226,12 +225,6 @@ const MoreAboutSection = () => (
               high-traffic advertising sites built in and React Next.js, and
               built an web scraping bot that would scrape data from an LLM and
               add it to our CRM
-            </span>
-          </li>
-          <li className="flex items-start space-x-3">
-            <span className="text-white mt-1">•</span>
-            <span>
-              Currently working on a Clay-esque enrichment platform project
             </span>
           </li>
         </ul>
